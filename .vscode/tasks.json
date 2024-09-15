@@ -3,11 +3,14 @@
         {
             "type": "cppbuild",
             "label": "C/C++: DEBUG",
-            "command": "g++.exe",
+            "command": "g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "src\\test.cxx",
+                "include\\persona.cxx",
+                "-I",
+                "include",
                 "-o",
                 "build\\debug\\${fileBasenameNoExtension}.exe"
             ],
